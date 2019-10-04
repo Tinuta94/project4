@@ -1,44 +1,34 @@
 import React, { Component } from 'react'
+import { Carousel } from 'react-responsive-carousel';
+import ReactDOM from 'react-dom';
+ import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-class Location extends Component {
+
+export default class Location extends Component {
     render() {
         return (
             <div>
-                <div class="totul">
-                <div class='toate'>
-                    <div class="locdoi"></div>
-                    <div class="loctrei"></div>
-                    <div class="locpatru"></div>
-                </div>
-
-                <div class="image2">
-                    <div class="firstloc">
-                        <p>(678) 987-3678 <br></br>
-                            3155 Avalon Boulevard<br></br>
-                            Alpharetta, Georgia</p>
-                    </div>
-
-                    <div class="secloc">
-                        <p>(404) 237-4664<br></br>
-                            39 West Ferry Road<br></br>
-                            Atlanta, Georgia</p>
-                    </div>
-
-                    <div class="thirdloc">
-                        <p>(404) 566-4247<br></br>
+                <Carousel className="slideshowrender">
+                    <div>
+                        <img src="https://i.pinimg.com/564x/1e/3e/95/1e3e951875ecf30f3f37fea71f083bb7.jpg" />
+                        <p className="legend">(404) 566-4247<br></br>
                             4475 Roswell Road,<br></br>
                             Marietta, GA</p>
                     </div>
-
-                </div>
-                <div class='toate1'>
-                <div class="doi"></div>
-                    <div class="trei"></div>
-                        <div class="patru"></div>
-                        </div>
-            </div>
+                    <div>
+                        <img src="https://i.pinimg.com/564x/2a/3a/a9/2a3aa9a4851e8cc577e1ac09476b74e7.jpg" />
+                        <p className="legend">(404) 237-4664<br></br>
+                            39 West Ferry Road<br></br>
+                            Atlanta, Georgia</p>
+                    </div>
+                    <div>
+                        <img src="https://i.pinimg.com/564x/06/c5/3b/06c53bda0c78db83fa5353bdee405693.jpg" />
+                        <p className="legend">(678) 987-3678 <br></br>
+                            3155 Avalon Boulevard<br></br>
+                            Alpharetta, Georgia</p>
+                    </div>
+                </Carousel>
             </div>
         )
     }
 }
-export default Location;
