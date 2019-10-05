@@ -7,8 +7,11 @@ import ReactDOM from 'react-dom';
 export default class Location extends Component {
     render() {
         return (
-            <div>
-                <Carousel className="slideshowrender">
+            
+
+               <div class="body">
+              <Carousel className="slideshowrender">
+                
                     <div>
                         <img src="https://i.pinimg.com/564x/1e/3e/95/1e3e951875ecf30f3f37fea71f083bb7.jpg" />
                         <p className="legend">(404) 566-4247<br></br>
@@ -27,7 +30,26 @@ export default class Location extends Component {
                             3155 Avalon Boulevard<br></br>
                             Alpharetta, Georgia</p>
                     </div>
+             
                 </Carousel>
+                <div class="text">
+            <p> I am sure over the last few months many of you will have visited one of the many trade shows that happened across
+                 the UK and Ireland.During your visit you will have seen new  pieces of equipment, treatments, techniques and ideas<br></br>
+                  of things to add to your business  but what is the best way to introduce a new treatment or technique to your<br></br>
+                   business for maximum result but minimum outlay?As an ever evolving industry with a society of people who are more <br></br>
+                and more aware of beauty treatments and products, and conscious of their appearance it has become a necessity for <br></br>
+                salons and therapists to introduce new treatments, oducts and techniques on a regular basis to keep ahead of the 
+                game and stand out from their  competitors.Introducing new treatments can be expensive in equipment, products and 
+                training but then you have the added expense of marketing the treatment, all of which add up.
+                  SPECIAL OFFER
+                  Offer an introductory offer for perhaps the first month to encourage clients to try the new  treatment.
+                Offer an introductory offer for perhaps the first month to encourage clients to try the new  treatment. </p>
+                {/* Depending 
+                on the nature of the new treatment you could perhaps pair it with another  treatment for free – for example if you 
+                are introducing a new facial you could offer a free back massage with it as this is very inexpensive for you to do.
+                 You could perhaps offer a second  treatment for half price, or a course of treatment at a special introductory price.</p>
+                  </div> */}
+                  </div>
             </div>
         )
     }
