@@ -11,6 +11,8 @@ import Tab from '@material-ui/core/Tab';
 import Home from './components/Home.js'
 import Location  from './components/Location.js'
 import Gallery from './components/Gallery.js'
+import Services from './components/Services.js'
+import Contact from './components/Contact.js'
 
 
 function App() {
@@ -26,9 +28,9 @@ function App() {
           <Tab label="" />
          <Link to="/gallery" class="link"> <Tab label="Gallery" /></Link>
           <Tab label="" />
-         <Link class="link"> <Tab label="Services" /></Link>
+         <Link  to="/services" class="link"> <Tab label="Services" /></Link>
          <Tab label="" />
-         <Link class="link"> <Tab label="Contact" /></Link>
+         <Link to="/contact" class="link"> <Tab label="Contact" /></Link>
           
         </Tabs>
       </AppBar>
@@ -36,6 +38,8 @@ function App() {
         <Route exact path="/" component={Home} />
          <Route exact path="/location" component={Location}/> 
          <Route exact path="/gallery" component={Gallery}/>
+         <Route exact path="/services" component={Services}/>
+         <Route exact path="/contact" component={Contact}/>
       </Switch>
     </div>
   );
