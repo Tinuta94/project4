@@ -1,32 +1,29 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 
-import Axios from 'axios';
+import axios from 'axios';
 
  class ServiceForm extends Component {
     state = {
-        newService: {
+        service: {
             name: "",
         },
         redirectToHome: false
     }
 
-    componentDidMount() {
-        window.scrollTo(0, 0)
-    }
 
     handleChange = (evnt) => {
-        let newService = { ...this.state };
+        let newService = { ...this.state.service };
 
         newService[evnt.target.name] = evnt.target.value
-        this.setState(newService)
+        this.setState({service: newService})
     }
 
 
 handleSubmit = (evnt) => {
     evnt.preventDefault()
 
-    Axios.post('/api/services/', this.state.newService)
+    axios.post('/api/services/', this.state.service)
         .then(() => {
             this.setState({
                 redirectToHome: true
@@ -40,7 +37,7 @@ render() {
     }
     return (
         <form onSubmit={this.handleSubmit}>
-            <input type="text" name="name" onChange={this.handleInput} value={this.state.name} />
+            <input type="text" name="name" onChange={this.handleChange} value={this.state.service.name} />
             <input type="submit" value="Submit" />
         </form>
     )
