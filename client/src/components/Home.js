@@ -5,12 +5,15 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div class="firstimage">
-                </div>
                 
-                <div class="name">
-                <h1>Un Petit Coin de Paradis</h1>
+              
+                <div class="firstimage">
+                
+            
                  </div>
+     
+                 <h1>Un Petit Coin de Paradis</h1>
+                
                
                 <div class="container">
 
