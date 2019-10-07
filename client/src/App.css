@@ -1,5 +1,5 @@
 body {
-background-color: plum
+background-color: #8E04AC;
 }
 .gif {
   background-image: url("https://media.giphy.com/media/12aW3WO37L1tw4/giphy.gif");
@@ -35,9 +35,17 @@ height: 500px
 }
 h2 {
   font-family: 'Sofia', cursive;
+  
+}
+h1 {
+ 
+  margin-top: -300px;
+  margin-left: 840px;
+  margin-bottom: 300px;
+  font-size: 45px
 }
 .name {
-  margin-left: 550px
+  margin-left: 850px
 }
 /* .firstgif {
   background-image: url("https://media.giphy.com/media/10FXH0H9j1ok/giphy.gif");
@@ -108,29 +116,82 @@ border: 2px solid black;
 width: 430px;
 height: 410px
 }
-.doi {
-  background-image: url("https://i.pinimg.com/564x/f2/15/11/f21511f9f322291f8fe4287f79fe133f.jpg");
-  width: 430px;
-  height: 600px;
-  border: 2px solid black;
-}
-.trei {
-  background-image: url("https://i.pinimg.com/564x/bb/20/1e/bb201ef896e0376118ae53e1e1dd28f1.jpg");
-  width: 510px;
-  height: 600px;
-  border: 2px solid black;
-}
-.patru {
-  background-image: url("https://i.pinimg.com/564x/87/ae/5b/87ae5bca80459ed6e6425df2b6777cdb.jpg");
-  width: 430px;
-  height: 600px;
-  border: 2px solid black;
-}
+
 .secgif {
   background-image: url("https://media.giphy.com/media/UnWKnBEzIzIqY/giphy.gif");
   width: 600px;
   height: 300px
 }
-/* .totul {
-  background-color: palevioletred
-} */
+
+.slideshowrender {
+  height: 100px;
+  width: 580px;
+  margin-top: -680px
+}
+
+.body {
+  
+  display: flex;
+  flex-direction: row;
+ align-content: center;
+ justify-content: space-around;
+ align-items: center;
+ background-color: aliceblue;
+ height: 820px
+}
+.text {
+  height: 150px;
+  width: 650px;
+  font-family: 'Leckerli One', cursive;
+  font-size: 21px;
+  margin-top: -660px
+  
+}
+.clasa {
+  height: 710px;
+  width: 100px
+  50px;
+}
+.foto {
+  width: 500px;
+  height: 100px
+}
+.contact {
+  font-size: 28px;
+  margin-left: 100px;
+  margin-top: 70px;
+  
+  color: black;
+  margin-right: 110px
+}
+.anim {
+  background-image: url("https://media.giphy.com/media/5yLgoc7WUclvlz3GsOQ/giphy.gif");
+  background-size: 100%;
+ 
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  height: 94%;
+  z-index: 3;
+  
+}
+h3 {
+  margin-left: 520px;
+  margin-right: 500px;
+  /* background-color: black; */
+  color: black;
+  font-size: 30px
+}
+.service {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5a3b235d0abd044fe1042f46/1521080147676-2Q8FKF8G9HNLZ165TGXG/ke17ZwdGBToddI8pDm48kCYK5J8jBbbxVt7cqszqJn0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2duWRpED9O_aSL3YvneQPbX1EeDvONzUA2vS8oEXO4yKI7zs2yPjc1ECvpa5Zm_kMqw/beautiful3.jpg?format=1500w");
+  height: 460px
+}
+h4 {
+  font-size: 30px
+}
+.srv {
+  background-color: #edc6ce;
+ margin-top: -40px;
+  height: 400px
+}
