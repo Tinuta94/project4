@@ -11,8 +11,10 @@ import Tab from '@material-ui/core/Tab';
 import Home from './components/Home.js'
 import Location  from './components/Location.js'
 import Gallery from './components/Gallery.js'
-import Services from './components/Services.js'
 import Contact from './components/Contact.js'
+import ListofServices from './components/ListofServices.js'
+import Service from './components/Service.js'
+import ServiceForm from './components/ServiceForm';
 
 
 function App() {
@@ -38,8 +40,10 @@ function App() {
         <Route exact path="/" component={Home} />
          <Route exact path="/location" component={Location}/> 
          <Route exact path="/gallery" component={Gallery}/>
-         <Route exact path="/services" component={Services}/>
+         <Route path="/services/addnew" component={ServiceForm} />
+         <Route exact path="/services" component={ListofServices}/>
          <Route exact path="/contact" component={Contact}/>
+         {/* <Route exact path="/services/:id" */}
       </Switch>
     </div>
   );
