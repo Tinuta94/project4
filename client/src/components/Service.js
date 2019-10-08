@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Redirect, Link } from "react-router-dom"
 import Specialists from './Specialists';
+import Options from './Options';
 
 class Service extends Component {
     state = {
@@ -14,8 +15,6 @@ class Service extends Component {
     getServiceFromServer = () => 
         axios.get(`/api/services/${this.props.match.params.id}/`)
             .then((res) => {
-                //this.state.specialists.filter(specialists => specialists.service === this.service.id)
-                //     this.state.service.filter(service => service.options === this.service.id)
                 this.setState({
                     service: res.data
                 })
@@ -27,10 +26,19 @@ class Service extends Component {
                 const specialists = res.data.filter(specialist => specialist.service === this.state.service.id)
                 this.setState({ specialists })
             })
+    
+            getServiceOptionsFromServer = () => 
+            axios.get(`/api/options/`)
+                .then((res) => {
+                    const options = res.data.filter(option => option.service === this.state.service.id)
+                    this.setState({ options })
+                })
+        
 
     componentDidMount() {
         this.getServiceFromServer()
             .then(this.getServiceSpecialistsFromServer())
+            .then(this.getServiceOptionsFromServer())
         
     }
 
@@ -48,6 +56,18 @@ class Service extends Component {
         axios.delete(`/api/specialists/${specialistId}/`)
             .then(() => this.getServiceSpecialistsFromServer())
     }
+   
+
+// componentDidMount() {
+//     this.getServiceFromServer()
+//         .then(this.getServiceOptionsFromServer())
+    
+// }
+
+    handleDeleteOption = (optionId) => {
+        axios.delete(`/api/options/${optionId}/`)
+            .then(() => this.getServiceOptionsFromServer())
+    }
 
 
     render() {
@@ -56,12 +76,17 @@ class Service extends Component {
         }
         return (
             <div>
-                <p>kfklfd</p>
+               
                 <p>{this.state.service.name}</p>
                 <button onClick={this.handleDeleteService}>Delete Service</button>
                 <Link to={`/services/${this.state.service.id}/specialists/new`}>
                     <button >Add a Specialist</button></Link>
+
+                    <Link to={`/services/${this.state.service.id}/options/new`}>
+                    <button >Add New Option</button></Link>
+
                 {Specialists(this.state.specialists, this.handleDeleteSpecialist)}
+                {Options(this.state.options, this.handleDeleteOption)}
             </div>
         )
     }
