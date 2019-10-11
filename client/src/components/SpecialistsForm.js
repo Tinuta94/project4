@@ -4,6 +4,7 @@ import { Redirect } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 
 class SpecialistsForm extends Component {
@@ -65,6 +66,7 @@ class SpecialistsForm extends Component {
                         value={this.state.newSpecialist.description}
                         margin="normal"
                         variant="outlined"
+                        class="boo"
                     />
                     <TextField
         // id="outlined-email-input"
@@ -87,8 +89,10 @@ class SpecialistsForm extends Component {
         autoComplete="url"
         margin="normal"
         variant="outlined"
-      />
-                    <input type="submit" value="Submit" />
+      />  
+      <Button variant="contained" type="submit" >
+        Submit</Button>
+                    {/* <input type="submit" value="Submit" /> */}
                 </form>
 
             </div>
