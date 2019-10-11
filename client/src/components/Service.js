@@ -9,8 +9,11 @@ class Service extends Component {
         service: {},
         specialists: [],
         options: [],
-        redirectToHome: false
+        redirectToHome: false,
+        isSpecialistsShown: false,
+        isOptionsShown: false
     }
+
 
     getServiceFromServer = () => 
         axios.get(`/api/services/${this.props.match.params.id}/`)
@@ -27,7 +30,7 @@ class Service extends Component {
                 this.setState({ specialists })
             })
     
-            getServiceOptionsFromServer = () => 
+    getServiceOptionsFromServer = () => 
             axios.get(`/api/options/`)
                 .then((res) => {
                     const options = res.data.filter(option => option.service === this.state.service.id)
@@ -37,8 +40,9 @@ class Service extends Component {
 
     componentDidMount() {
         this.getServiceFromServer()
-            .then(this.getServiceSpecialistsFromServer())
-            .then(this.getServiceOptionsFromServer())
+            // .then(() => this.getServiceSpecialistsFromServer())
+            .then(this.getServiceSpecialistsFromServer)
+            .then(this.getServiceOptionsFromServer)
         
     }
 
@@ -58,15 +62,17 @@ class Service extends Component {
     }
    
 
-// componentDidMount() {
-//     this.getServiceFromServer()
-//         .then(this.getServiceOptionsFromServer())
-    
-// }
-
     handleDeleteOption = (optionId) => {
         axios.delete(`/api/options/${optionId}/`)
             .then(() => this.getServiceOptionsFromServer())
+    }
+
+    handleToggleSpecialists = () => {
+        this.setState({isSpecialistsShown: true, isOptionsShown: false})
+    }
+
+    handleToggleOptions = () => {
+        this.setState({isOptionsShown: true, isSpecialistsShown: false})
     }
 
 
@@ -78,16 +84,30 @@ class Service extends Component {
             <div>
                
                 <p>{this.state.service.name}</p>
+
                 <button onClick={this.handleDeleteService}>Delete Service</button>
-                <Link to={`/services/${this.state.service.id}/specialists/new`}>
-                    <button >Add a Specialist</button></Link>
 
-                    <Link to={`/services/${this.state.service.id}/options/new`}>
-                    <button >Add New Option</button></Link>
+                <button onClick={this.handleToggleSpecialists}>Specialists</button>
+                <button onClick={this.handleToggleOptions}>Options</button>
 
-                {Specialists(this.state.specialists, this.handleDeleteSpecialist)}
-                {Options(this.state.options, this.handleDeleteOption)}
+                {/* <Link to={`/services/${this.state.service.id}/specialists/new`}>
+                    <button >Add a Specialist</button></Link> */}
+
+                    {/* <Link to={`/services/${this.state.service.id}/options/new`}>
+                    <button >Add New Option</button></Link> */}
+
+                {   this.state.isSpecialistsShown 
+                    ? Specialists(this.state.specialists, this.handleDeleteSpecialist, this.state.service)
+                    : null
+                }
+
+                {   this.state.isOptionsShown 
+                    ? Options(this.state.options, this.handleDeleteOption, this.state.service)
+                    : null
+                }
+                
             </div>
+
         )
     }
 }
