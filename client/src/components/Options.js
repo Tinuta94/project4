@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom'
 
-const Options = (optionsList, handleDeleteOption) => (
+const Options = (optionsList, handleDeleteOption, service) => (
 
     <div>
-        <h3>Options</h3>
+       
+        <div class="optionss">
+       
         <div className="listspecial">
             {optionsList.map(option => (
                 <div>
@@ -18,9 +20,13 @@ const Options = (optionsList, handleDeleteOption) => (
                     
                     <button onClick={() => handleDeleteOption(option.id)}>Delete</button>  
                 </div>
+              
             )
             )}
+              </div>
         </div>
+        <Link to={`/services/${service.id}/options/new`}>
+                <button >Add  New Option</button></Link>
     </div>
 );
 
