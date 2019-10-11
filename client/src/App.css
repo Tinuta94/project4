@@ -1,65 +1,105 @@
-body {
-background-color: #8E04AC;
-}
 .gif {
   background-image: url("https://media.giphy.com/media/12aW3WO37L1tw4/giphy.gif");
-
+ 
   height: 400px;
   width: 280px;
-  background-color: pink
+  
   
 }
+.legend {
+  font-size: 30px
+}
 h1 {
+  /* font-family: 'Leckerli One', cursive; */
+  /* font-family: 'Niconne', cursive; */
+  /* font-family: 'Montez', cursive; */
+  margin-top: -10px;
   font-family: 'Leckerli One', cursive;
+ font-size: 60px;
+ /* color: #5e105a; */
+ color:  #4b1e53;
+ padding: 0 50px 0px 280px;
+
+} 
+.link {
+  color: pink
 
 }
-.link {
-  color: white;
-
+.sectext {
+  padding-left: 530px;
+  padding-bottom: 70px
 }
 .firstimage {
-  background-image: url("https://scopula.storeland.ru/design/7/1731/226/1.jpg");
-
-height: 500px
+  background-image: url("https://www.coty.com/sites/default/files/styles/hero_custom_user_huge_1x/public/Homepage_Carousel_same_heading_05.jpg?itok=SxabzrXM&timestamp=1548744763");
+ height: 920px;
+ width: 100%;
+  margin-top: auto;
+}
+p {
+  /* font-family: 'Patua One', cursive; */
+  font-family: 'Leckerli One', cursive;
+  /* font-family: 'Italianno', cursive; */
+  font-size: 23px;
+  padding: 0 20px 0 0;
+  color: #4b1e53;
+  margin-top: 190px;
+  margin-left: 60px
 }
 .about {
   
-  width: 700px;
+  width: 880px;
   height: 450px;
-  font-size: 20px
+  font-size: 20px;
+  color: black;
+  margin-left: 550px;
+  margin-top: 40px;
+  margin-right: 5px
+  
 }
 .third {
   width: 300px;
   height: 390px;
   font-size: 20px
 }
-h2 {
+/* .logo {
+  margin-left: 300px;
+  margin-top: -30px
+} */
+/* h2 {
   font-family: 'Sofia', cursive;
+  font-size: 30px;
+  color: #4b1e53;
+  
+} */
+.primetext {
+  /* font-family: 'Sofia', cursive; */
+  font-family: 'Leckerli One', cursive;
+  font-size: 40px;
+  color: black;
+  margin-top: -550px;
+  margin-left: 750px;
+  padding-bottom: 10px;
   
 }
-h1 {
- 
-  margin-top: -300px;
-  margin-left: 840px;
-  margin-bottom: 300px;
-  font-size: 45px
+.secondarytext {
+  /* font-family: 'Sofia', cursive; */
+  font-family: 'Italianno', cursive;
+  color: black;
+  font-size: 50px;
+  margin-left: 1180px;
+  margin-top: -90px
 }
 .name {
   margin-left: 850px
 }
-/* .firstgif {
-  background-image: url("https://media.giphy.com/media/10FXH0H9j1ok/giphy.gif");
-  height: 400px;
-  width: 280px */
-
-
 .container {
   display: flex;
   flex-direction: row;
  align-content: center;
  justify-content: space-around;
  align-items: center;
- margin-top: 50px
+ margin-top: -450px;
+
 }
 
 .image2 {
@@ -125,8 +165,8 @@ height: 410px
 
 .slideshowrender {
   height: 100px;
-  width: 580px;
-  margin-top: -680px
+  width: 600px;
+  margin-top: 60px;
 }
 
 .body {
@@ -136,21 +176,22 @@ height: 410px
  align-content: center;
  justify-content: space-around;
  align-items: center;
- background-color: aliceblue;
- height: 820px
+
 }
 .text {
   height: 150px;
   width: 650px;
   font-family: 'Leckerli One', cursive;
-  font-size: 21px;
-  margin-top: -660px
+  font-size: 23px;
+  color: black;
+  margin-top: 40px
+  
   
 }
 .clasa {
-  height: 710px;
-  width: 100px
-  50px;
+  height: 670px;
+  width: 100px;
+ 
 }
 .foto {
   width: 500px;
@@ -165,7 +206,7 @@ height: 410px
   margin-right: 110px
 }
 .anim {
-  background-image: url("https://media.giphy.com/media/5yLgoc7WUclvlz3GsOQ/giphy.gif");
+  background-image: url("http://www.buildhealthnaturally.com/wp-content/uploads/2016/06/beauty.jpg");
   background-size: 100%;
  
   margin-left: 0;
@@ -185,13 +226,102 @@ h3 {
 }
 .service {
   background-image: url("https://images.squarespace-cdn.com/content/v1/5a3b235d0abd044fe1042f46/1521080147676-2Q8FKF8G9HNLZ165TGXG/ke17ZwdGBToddI8pDm48kCYK5J8jBbbxVt7cqszqJn0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2duWRpED9O_aSL3YvneQPbX1EeDvONzUA2vS8oEXO4yKI7zs2yPjc1ECvpa5Zm_kMqw/beautiful3.jpg?format=1500w");
-  height: 460px
+  height: 460px;
+  border: 5px solid black
 }
 h4 {
   font-size: 30px
 }
-.srv {
-  background-color: #edc6ce;
- margin-top: -40px;
-  height: 400px
+
+.pozele {
+  width: 1380px;
+ margin-left: 25px;
+ margin-right: 15px;
+ border: 3px solid black;
+ margin-top: 10px
+ 
+}
+/* .quote {
+  font-size: 23px;
+  color: purple;
+  margin-top: -85px;
+  padding-right: 300px;
+  float: left;
+  padding-bottom: 65px;
+  padding-right: 270px
+} */
+.pic {
+  background-image: url("https://webstockreview.net/images/cosmetology-clipart-beauty-icon-16.png");
+  height: 600px;
+  width: 500px;
+  margin-top: -150px;
+  margin-left: 130px
+}
+
+.optionss {
+  float: right;
+  width: 600px;
+  margin-top: -150px
+}
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+.specialistss {
+  width: 600px;
+ 
+}
+h4 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Sofia', cursive;
+  font-size: 50px;
+  /* margin-top: -5px; */
+}
+#colordescr {
+  font-size:30px;
+  color: purple
+}
+.addbutton {
+  display: flex;
+  justify-content: center;
+
+}
+.list {
+  display: flex;
+  justify-content: center
+
+}
+.servname {
+  padding: 10px 0 30px 0;
+  display: flex;
+  justify-content: center;
+}
+h5 {
+  font-size: 35px;
+  color: black;
+  margin-top: -10px
+}
+.linkserv {
+  color: black;
+  font-size: 35px;
+  padding-top: 5px
+}
+
+#circle {
+  font-size: 55px;
+  color: black;
+  /* margin-top: -60px; */
+  margin-left: 40px
+}
+.explore {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: -20px
+ 
 }
