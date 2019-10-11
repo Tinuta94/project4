@@ -10,11 +10,13 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 
-const Specialists = (specialistsList, handleDeleteSpecialist) => (
+const Specialists = (specialistsList, handleDeleteSpecialist, service) => (
 
     <div>
-        <h3>Specialists</h3>
-        <div className="listspecial">
+      
+        <div class="specialistss">
+     
+        <div class="listspecial">
             {specialistsList.map(specialist => (
                 <div>
                    <div>
@@ -36,70 +38,37 @@ const Specialists = (specialistsList, handleDeleteSpecialist) => (
                      
                     </Typography>
                     {specialist.description}<br></br>
-                    {specialist.description}<br></br>
-                    {specialist.description}
+
                   </React.Fragment>
                 }
               />
-            {/* </ListItem>
+          
             <Divider variant="inset" component="li" />
-            <ListItem alignItems="flex-start">
-              <ListItemAvatar>
-                <Avatar alt={specialist.name} src={specialist.photo_url} />
-              </ListItemAvatar>
-              <ListItemText
-                primary="Summer BBQ"
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                    //   className={classes.inline}
-                      color="textPrimary"
-                    >
-                      to Scott, Alex, Jennifer
-                    </Typography>
-                    {" — Wish I could come, but I'm out of town this…"}
-                  </React.Fragment>
-                }
-              />
-            </ListItem> */}
-            <Divider variant="inset" component="li" />
-            {/* <ListItem alignItems="flex-start">
-              <ListItemAvatar>
-                <Avatar alt="Cindy Baker" src={specialist.photo_url} />
-              </ListItemAvatar>
-              <ListItemText
-                primary="Oui Oui"
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                    //   className={classes.inline}
-                      color="textPrimary"
-                    >
-                      Sandra Adams
-                    </Typography>
-                    {' — Do you have Paris recommendations? Have you ever…'}
-                  </React.Fragment>
-                }
-              /> */}
+           
             </ListItem>
           </List>
           </div>
         
-                    {/* <div>{specialist.name}</div>
+                     {/* <div>{specialist.name}</div>
                     <div><img src={specialist.photo_url} /></div>
                     <div>{specialist.description}</div>
                     <div>{specialist.email}</div> */}
 
                     
                     <button onClick={() => handleDeleteSpecialist(specialist.id)}>Delete</button>  
-                </div>
+
+                    </div>
+
+                    
             )
             )}
+           
         </div>
+       </div>
+
+       <Link to={`/services/${service.id}/specialists/new`}>
+                <button >Add a Specialist</button></Link>
+
     </div>
 );
 
