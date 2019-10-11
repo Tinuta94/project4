@@ -6,45 +6,70 @@
   
   
 }
+.mission {
+  margin-top: -160px;
+  margin-left: 280px;
+  font-family: 'Spirax', cursive;
+  padding-bottom: 30px;
+  color: #a40055
+}
 .legend {
   font-size: 30px;
   font-family: 'Courier New', Courier, monospace
 }
 h1 {
-  /* font-family: 'Leckerli One', cursive; */
-  /* font-family: 'Niconne', cursive; */
-  /* font-family: 'Montez', cursive; */
-  margin-top: -10px;
-  font-family: 'Leckerli One', cursive;
+  margin-top: 130px;
+  /* font-family: 'Marck Script', cursive; */
+  font-family: 'Henny Penny', cursive;
  font-size: 60px;
- /* color: #5e105a; */
  color:  #4b1e53;
- padding: 0 50px 0px 280px;
+ padding: 0 30px 0px 180px;
 
 } 
 .link {
-  color: pink
+  color: white
 
 }
 .sectext {
-  padding-left: 530px;
-  padding-bottom: 70px
+  padding-left: 370px;
+  padding-bottom: 50px;
+  margin-top: -20px;
+ 
 }
 .firstimage {
-  background-image: url("https://www.coty.com/sites/default/files/styles/hero_custom_user_huge_1x/public/Homepage_Carousel_same_heading_05.jpg?itok=SxabzrXM&timestamp=1548744763");
- height: 920px;
+  background-image: url("https://dancing.pagedesignshop.com/wp-content/uploads/2017/07/bfx-header1-1.png");
+ height: 600px;
  width: 100%;
   margin-top: auto;
 }
 p {
-  /* font-family: 'Patua One', cursive; */
-  font-family: 'Leckerli One', cursive;
+  
+  font-family: 'Spirax', cursive;
   /* font-family: 'Italianno', cursive; */
   font-size: 23px;
   padding: 0 20px 0 0;
-  color: #4b1e53;
-  margin-top: 190px;
-  margin-left: 60px
+  color: #a3005a;
+  margin-top: 230px;
+  margin-left: -520px
+}
+.nextpic {
+  background-image: url("https://www.pearlbeautysalon.com/wp-content/uploads/2017/06/jane-iredale-und-fuschia-make-up-at-pearl-beauty-carlingford-stunning-bridal-occasion-and-day-make-up-for-you.jpg");
+height: 340px;
+width: 2000px;
+padding-bottom: 30px;
+}
+.new {
+  width: 400;
+  height: 400px;
+  margin-top: 20px;
+  margin-left: 40px;
+ 
+}
+.lastpic {
+  background-image: url("http://www.safecosmetics.org/wp-content/uploads/2019/10/Demand-toxic-free-beauty_Campaign-for-Safe-Cosmetics-BCPP.png");
+  width: 2000px;
+  height: 300px;
+  margin-top: -260px;
 }
 .about {
   
@@ -74,22 +99,15 @@ p {
 } */
 .primetext {
   /* font-family: 'Sofia', cursive; */
-  font-family: 'Leckerli One', cursive;
+  font-family: 'Noto Serif JP', serif;
   font-size: 40px;
-  color: black;
-  margin-top: -550px;
-  margin-left: 750px;
+  color: #a40055;
+  margin-top: -180px;
+  margin-left: 590px;
   padding-bottom: 10px;
   
 }
-.secondarytext {
-  /* font-family: 'Sofia', cursive; */
-  font-family: 'Italianno', cursive;
-  color: black;
-  font-size: 50px;
-  margin-left: 1180px;
-  margin-top: -90px
-}
+
 .name {
   margin-left: 850px
 }
@@ -99,7 +117,8 @@ p {
  align-content: center;
  justify-content: space-around;
  align-items: center;
- margin-top: -450px;
+ margin-top: -400px;
+ padding-bottom: 130px
 
 }
 
@@ -255,11 +274,11 @@ h4 {
   padding-right: 270px
 } */
 .pic {
-  background-image: url("https://webstockreview.net/images/cosmetology-clipart-beauty-icon-16.png");
-  height: 600px;
-  width: 500px;
-  margin-top: -150px;
-  margin-left: 130px
+  background-image: url("https://i.pinimg.com/originals/f3/e3/df/f3e3dfa3bf02617d4333f7cdb727998a.jpg");
+  height: 400px;
+  width: 750px;
+  margin-top: -760px;
+  margin-left: 570px
 }
 
 .optionss {

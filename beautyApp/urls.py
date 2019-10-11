@@ -4,7 +4,7 @@ from . import views
 
 router = routers.DefaultRouter()
 #this is like app.use from server.js
-router.register('service', views.ServiceViewSet)
+router.register('services', views.ServiceViewSet)
 router.register('specialists', views.SpecialistsViewSet)
 router.register('options', views.OptionsViewSet)
 

@@ -1,7 +1,10 @@
 {
-    "name": "beautysalon",
-    "scripts": {
-      "build": "cd client && npm install && npm run build && cd ..",
-      "postinstall": "npm run build && echo 'Client built!'"
-    }
+  "name": "beautysalon",
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd ..",
+    "postinstall": "npm run build && echo 'Client built!'"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
   }
+}

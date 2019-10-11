@@ -1,20 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Link, Route, Switch} from "react-router-dom"
-
+import {Link, Route, Switch} from "react-router-dom";
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-// import Typography from '@material-ui/core/Typography';
-// import Box from '@material-ui/core/Box';
-import Home from './components/Home.js'
-import Location  from './components/Location.js'
-import Gallery from './components/Gallery.js'
-import Contact from './components/Contact.js'
-import ListofServices from './components/ListofServices.js'
-import Service from './components/Service.js'
-import ServiceForm from './components/ServiceForm';
+import Home from './components/Home.js';
+import Location  from './components/Location.js';
+import Gallery from './components/Gallery.js';
+import Contact from './components/Contact.js';
+import ListofServices from './components/ListofServices.js';
+import Service from './components/Service.js';
+import ServiceForm from './components/ServiceForm.js';
+import Specialists from './components/Specialists.js';
+import SpecialistsForm from './components/SpecialistsForm.js';
+import Options from './components/Options.js';
+import OptionsForm from './components/OptionsForm.js'
 
 
 function App() {
@@ -41,9 +42,15 @@ function App() {
          <Route exact path="/location" component={Location}/> 
          <Route exact path="/gallery" component={Gallery}/>
          <Route path="/services/addnew" component={ServiceForm} />
+         <Route path="/services/:id/specialists/new" component={SpecialistsForm}/>
+         <Route path="/services/:id/options/new" component={OptionsForm}/>
+         <Route path="/services/:id/options" component={Options}/>
+         <Route path="/services/:id/specialists" component={Specialists}/>
+         <Route path="/services/:id" component={Service}/>
          <Route exact path="/services" component={ListofServices}/>
+         {/* <Route path="/services/:id/options/new" component={OptionsForm}/> */}
          <Route exact path="/contact" component={Contact}/>
-         {/* <Route exact path="/services/:id" */}
+     
       </Switch>
     </div>
   );
