@@ -7,7 +7,8 @@
   
 }
 .legend {
-  font-size: 30px
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace
 }
 h1 {
   /* font-family: 'Leckerli One', cursive; */
@@ -170,23 +171,26 @@ height: 410px
 }
 
 .body {
-  
   display: flex;
   flex-direction: row;
  align-content: center;
  justify-content: space-around;
  align-items: center;
+ margin-top: 40px
 
 }
-.text {
-  height: 150px;
-  width: 650px;
-  font-family: 'Leckerli One', cursive;
-  font-size: 23px;
+.texts {
+  height: 100px;
+  width: 690px;
   color: black;
-  margin-top: 40px
   
   
+}
+#text {
+  font-family: 'Leckerli One', cursive;
+  font-size: 22px;
+  color: black;
+  margin-top: 60px
 }
 .clasa {
   height: 670px;
