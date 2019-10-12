@@ -42,11 +42,12 @@ class SpecialistsForm extends Component {
 
     render() {
         if (this.state.redirectToHome) {
-            return <Redirect to="/services" />
+            return <Redirect to={`/services/${this.props.match.params.id}`} />
         }
         return (
-            <div>
+            <div class="opcontainer">
                 <form onSubmit={this.handleSubmit}>
+                    <div class="opfirst">
                     <TextField
                         id="outlined-name"
                         label="Name"
@@ -57,17 +58,21 @@ class SpecialistsForm extends Component {
                         margin="normal"
                         variant="outlined"
                     />
+                    </div>
+                    <div class="optwo">
                     <TextField
                         id="outlined-uncontrolled"
                         label="Description"
-                        name="description"
+                        name="descrp."
                         type="description"
                         onChange={this.handleChange}
                         value={this.state.newSpecialist.description}
                         margin="normal"
                         variant="outlined"
-                        class="boo"
+                       
                     />
+                    </div>
+                    <div class="opthree">
                     <TextField
         // id="outlined-email-input"
         label="Email"
@@ -78,6 +83,8 @@ class SpecialistsForm extends Component {
         margin="normal"
         variant="outlined"
       />
+      </div>
+      <div class="opfour">
                     <TextField
         // id="outlined-email-input"
         label="Image URL"
@@ -90,11 +97,14 @@ class SpecialistsForm extends Component {
         margin="normal"
         variant="outlined"
       />  
+      </div>
+      <div class="opfive">
       <Button variant="contained" type="submit" >
         Submit</Button>
+        </div>
                     {/* <input type="submit" value="Submit" /> */}
                 </form>
-
+                <div class="servbackone"> </div>
             </div>
             // <div>
             //      <form onSubmit={this.handleSubmit}>

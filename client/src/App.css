@@ -19,8 +19,8 @@
 }
 h1 {
   margin-top: 130px;
-  /* font-family: 'Marck Script', cursive; */
-  font-family: 'Henny Penny', cursive;
+  font-family: 'Marck Script', cursive;
+  /* font-family: 'Henny Penny', cursive; */
  font-size: 60px;
  color:  #4b1e53;
  padding: 0 30px 0px 180px;
@@ -44,33 +44,34 @@ h1 {
 }
 p {
   
-  font-family: 'Spirax', cursive;
+  /* font-family: 'Spirax', cursive; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* font-family: 'Italianno', cursive; */
   font-size: 23px;
   padding: 0 20px 0 0;
-  color: #a3005a;
+  color: black;
   margin-top: 230px;
   margin-left: -520px
 }
 .nextpic {
   background-image: url("https://www.pearlbeautysalon.com/wp-content/uploads/2017/06/jane-iredale-und-fuschia-make-up-at-pearl-beauty-carlingford-stunning-bridal-occasion-and-day-make-up-for-you.jpg");
 height: 340px;
-width: 2000px;
+width: 1445px;
 padding-bottom: 30px;
 }
 .new {
   width: 400;
-  height: 400px;
+  height: 200px;
   margin-top: 20px;
   margin-left: 40px;
  
 }
-.lastpic {
-  background-image: url("http://www.safecosmetics.org/wp-content/uploads/2019/10/Demand-toxic-free-beauty_Campaign-for-Safe-Cosmetics-BCPP.png");
+/* .lastpic {
+  background-image: url("https://www.schwarzkopf.international/content/dam/schwarzkopf/master/en/articles/visuals/hair-coloring-at-home.jpg");
   width: 2000px;
-  height: 300px;
+  height: 700px;
   margin-top: -260px;
-}
+} */
 .about {
   
   width: 880px;
@@ -91,12 +92,13 @@ padding-bottom: 30px;
   margin-left: 300px;
   margin-top: -30px
 } */
-/* h2 {
-  font-family: 'Sofia', cursive;
-  font-size: 30px;
-  color: #4b1e53;
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  color: black;
+  margin-left: 480px
   
-} */
+}
 .primetext {
   /* font-family: 'Sofia', cursive; */
   font-family: 'Noto Serif JP', serif;
@@ -185,8 +187,11 @@ height: 410px
 
 .slideshowrender {
   height: 100px;
-  width: 600px;
-  margin-top: 60px;
+  width: 590px;
+  margin-top: -460px;
+  margin-left: -10px;
+
+ 
 }
 
 .body {
@@ -195,21 +200,34 @@ height: 410px
  align-content: center;
  justify-content: space-around;
  align-items: center;
- margin-top: 40px
+ margin-top: -40px
 
 }
-.texts {
-  height: 100px;
-  width: 690px;
-  color: black;
-  
+.servname {
+  font-family: 'Spirax', cursive;
+  margin-bottom: -50px;
+  margin-left: -40px
   
 }
+
+.servnametwo {
+  font-family: 'Spirax', cursive;
+  font-size: 30px;
+  margin-left: 680px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  font-size: 50px
+
+}
 #text {
-  font-family: 'Leckerli One', cursive;
+  /* font-family: 'Leckerli One', cursive; */
+  /* font-family: 'Spirax', cursive; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 22px;
   color: black;
-  margin-top: 60px
+  margin-top: 80px;
+  width: 600px;
+  margin-left: 20px;
 }
 .clasa {
   height: 670px;
@@ -221,39 +239,43 @@ height: 410px
   height: 100px
 }
 .contact {
-  font-size: 28px;
-  margin-left: 100px;
-  margin-top: 70px;
+  font-size: 22px;
+  font-family:'Times New Roman', Times, serif;
+  margin-left: 120px;
+  margin-top: -480px;
+  margin-right: 900px;
+  padding-right: 730px;
   
   color: black;
   margin-right: 110px
 }
 .anim {
-  background-image: url("http://www.buildhealthnaturally.com/wp-content/uploads/2016/06/beauty.jpg");
-  background-size: 100%;
+  background-image: url("https://i.ytimg.com/vi/7jtmgv482cM/maxresdefault.jpg");
  
-  margin-left: 0;
-  padding: 0;
-  width: 100%;
-  position: absolute;
-  height: 94%;
-  z-index: 3;
-  
+margin-left: 110px;
+  width: 1200px;
+  height: 700px;
 }
 h3 {
-  margin-left: 520px;
-  margin-right: 500px;
+  margin-left: 620px;
+  margin-right: 300px;
   /* background-color: black; */
   color: black;
-  font-size: 30px
+  font-size: 30px;
+ 
+}
+.hthree {
+  margin-top: 90px
 }
 .service {
-  background-image: url("https://images.squarespace-cdn.com/content/v1/5a3b235d0abd044fe1042f46/1521080147676-2Q8FKF8G9HNLZ165TGXG/ke17ZwdGBToddI8pDm48kCYK5J8jBbbxVt7cqszqJn0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2duWRpED9O_aSL3YvneQPbX1EeDvONzUA2vS8oEXO4yKI7zs2yPjc1ECvpa5Zm_kMqw/beautiful3.jpg?format=1500w");
-  height: 460px;
-  border: 5px solid black
+  background-image: url("https://www.evolutionlaser.se/wp-content/uploads/2018/02/blog-perfect-complexion-img.jpg");
+  height: 560px;
+ 
 }
 h4 {
-  font-size: 30px
+  font-size: 30px;
+  color: black;
+  padding-left: 130px
 }
 
 .pozele {
@@ -293,7 +315,14 @@ h4 {
   }
 }
 .specialistss {
-  width: 600px;
+  width: 800px;
+  margin-left: 380px;
+  margin-top: -150px;
+}
+.specialistsss {
+  width: 700px;
+  margin-left: 380px;
+  margin-top: -150px;
  
 }
 h4 {
@@ -310,17 +339,25 @@ h4 {
 .addbutton {
   display: flex;
   justify-content: center;
+  background-color: #e9c8ba
+  
+  
 
 }
 .list {
   display: flex;
-  justify-content: center
+  justify-content: center;
+ 
 
 }
 .servname {
-  padding: 10px 0 30px 0;
+  padding: 0 0 30px 0;
   display: flex;
   justify-content: center;
+  margin-top: 10px;
+  font-size: 50px;
+  margin-left: 40px;
+
 }
 h5 {
   font-size: 35px;
@@ -345,6 +382,135 @@ h5 {
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-top: -20px
+  margin-top: -20px;
+  background-color: #e9c8ba
+}
+.servnameone {
+  color: #e4ca9d
+}
+.servform {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-top: 160px;
+ 
+  
+}
+.servback {
+  width: 1003px;
+  height: 650px;
+  margin-top: -310px;
+  margin-bottom: -60px;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/51REXNocAwL._SL1000_.jpg");
+  border-radius: 29px
+}
+.sbutton {
+  margin-left: 50px
+}
+.backserv {
+  background-color: #e9c8ba;
+ margin-bottom: -100px
+  
+}
+.servimg {
+  margin-left: -35px;
+
+}
+.firstimgserv {
+  background-image: url("https://www.evolutionlaser.se/wp-content/uploads/2018/02/blog-perfect-complexion-img.jpg");
+  width: 1440px;
+  height: 600px
+}
+.buttons {
+  margin-left: 580px;
+  margin-top: -35px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-items: center;
+  align-items: center;
+  justify-items: center
+  
+ 
+}
+.click {
+  font-size: 30px;
+  background-color: #e9c8ba;
+  justify-content: space-between
+}
+#handelete {
+  margin-left: 300px
+}
+#handeletetwo {
+  margin-left: -10px
+}
+#addspec {
+  margin-left: 270px
+}
+.empty {
+  height: 200px;
+}
+#hrloc {
+  border-left: 3px solid gray;
+  height: 630px;
+  margin-top: 40px
+}
+.backlist {
+  background-color: #e9c8ba
+}
+.optioncont {
+  height: 600px;
+  width: 700px
+}
+.optionlist {
+  padding-bottom: 30px
+}
+.opcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 100px
+}
+.opfive {
+  margin-left: 50px
+}
+.servbackone {
+  width: 1003px;
+  height: 650px;
+  margin-top: -380px;
+  margin-bottom: -60px;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/51REXNocAwL._SL1000_.jpg");
+  border-radius: 29px;
+}
+.icon {
+  display: inline-block;
+  position: relative;
+  border: none;
+  outline: none;
+  width: auto;
+  padding-right: 30px;
+  vertical-align: middle;
+}
+
+.flaticon-phone-call-1 {
+  font-weight:bold;
+  background-image: url("https://image.flaticon.com/icons/svg/126/126509.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+}
+.continfo {
+  margin-left: 250px;
+  display: flex;
+  flex-direction: row;
+}
+.phone {
+  padding-right: 20px;
  
 }

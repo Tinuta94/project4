@@ -38,9 +38,11 @@ render() {
         return <Redirect to="/services" />
     }
     return (
-        <div>
+       
+        <div class="servform">
 
 <form onSubmit={this.handleSubmit}>
+    <div class="sname">
                     <TextField
                         id="outlined-name"
                         label="Name"
@@ -51,10 +53,12 @@ render() {
                         margin="normal"
                         variant="outlined"
                     />
+                    </div>
+                    <div class="simage">
                       <TextField
-        // id="outlined-email-input"
+       
         label="Image URL"
-        // className={classes.textField}
+      
         type="img"
         name="photo_url"
         onChange={this.handleChange}
@@ -63,16 +67,19 @@ render() {
         margin="normal"
         variant="outlined"
       />  
+      </div>
+      <div class="sbutton">
        <Button variant="contained" type="submit" >
         Submit</Button>
-       </form>
-        {/* <form onSubmit={this.handleSubmit}>
-            <input type="text" name="name" onChange={this.handleChange} value={this.state.service.name} />
-            <input type="img" name="photo_url" label="image_url" onChange={this.handleChange} value={this.state.service.photo_url}/>
-            <input type="submit" value="Submit" />
-        </form> */}
+       
         </div>
+       </form>
+       <div class="servback"> </div>
+        </div>
+       
     )
+   
 }
+
  }
 export default ServiceForm;

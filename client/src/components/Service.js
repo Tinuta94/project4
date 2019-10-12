@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Redirect, Link } from "react-router-dom"
 import Specialists from './Specialists';
 import Options from './Options';
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 class Service extends Component {
     state = {
@@ -81,15 +83,25 @@ class Service extends Component {
             return <Redirect to="/services" />
         }
         return (
-            <div>
+            
+            <div class="backserv">
+              
+               <div class="firstimgserv"></div>
+                <p class="servnametwo">{this.state.service.name}</p>
+                <hr></hr>
+                 <div class="buttons">
+                     <div class="click">
+                <Button  onClick={this.handleDeleteService}>Delete Service</Button>
+                </div>
+                <div class="click">
+                <Button  onClick={this.handleToggleSpecialists}>Specialists</Button>
+                </div>
+                <div class="click">
+                <Button  onClick={this.handleToggleOptions}>Options</Button>
+                </div>
+                </div>
                
-                <p>{this.state.service.name}</p>
-
-                <button onClick={this.handleDeleteService}>Delete Service</button>
-
-                <button onClick={this.handleToggleSpecialists}>Specialists</button>
-                <button onClick={this.handleToggleOptions}>Options</button>
-
+                <div class="empty"></div>
                 {/* <Link to={`/services/${this.state.service.id}/specialists/new`}>
                     <button >Add a Specialist</button></Link> */}
 

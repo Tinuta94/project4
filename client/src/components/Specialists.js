@@ -9,13 +9,16 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 
 const Specialists = (specialistsList, handleDeleteSpecialist, service) => (
 
     <div>
+  
       
         <div class="specialistss">
-     
+        <Link to={`/services/${service.id}/specialists/new`}>
+                <Button id="addspec">Add a Specialist</Button></Link>
         <div class="listspecial">
             {specialistsList.map(specialist => (
                 <div>
@@ -38,6 +41,8 @@ const Specialists = (specialistsList, handleDeleteSpecialist, service) => (
                      
                     </Typography>
                     {specialist.description}<br></br>
+                    <br></br>
+                    {specialist.email}
 
                   </React.Fragment>
                 }
@@ -55,7 +60,7 @@ const Specialists = (specialistsList, handleDeleteSpecialist, service) => (
                     <div>{specialist.email}</div> */}
 
                     
-                    <button onClick={() => handleDeleteSpecialist(specialist.id)}>Delete</button>  
+                     <Button variant="contained" id="handelete" onClick={() => handleDeleteSpecialist(specialist.id)}>Delete</Button>  
 
                     </div>
 
@@ -66,8 +71,7 @@ const Specialists = (specialistsList, handleDeleteSpecialist, service) => (
         </div>
        </div>
 
-       <Link to={`/services/${service.id}/specialists/new`}>
-                <button >Add a Specialist</button></Link>
+      
 
     </div>
 );

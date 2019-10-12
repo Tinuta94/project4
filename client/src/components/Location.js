@@ -7,9 +7,11 @@ import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 export default class Location extends Component {
     render() {
         return (
-
-
+<div>
+            <h2>Explore our Locations</h2>
+            <hr></hr>
             <div class="body">
+              
                 <Carousel className="slideshowrender">
 
                     <div>
@@ -30,9 +32,10 @@ export default class Location extends Component {
                             3155 Avalon Boulevard<br></br>
                             Alpharetta, Georgia</p>
                     </div>
-
+             
                 </Carousel>
-                <div class="texts">
+                
+                <div className="texts">
                     <p id="text"> I am sure over the last few months many of you will have visited one of the many trade shows that happened across
                  the UK and Ireland.During your visit you will have seen new  pieces of equipment, treatments, techniques and ideas<br></br>
                         of things to add to your business  but what is the best way to introduce a new treatment or technique to your<br></br>
@@ -51,6 +54,7 @@ export default class Location extends Component {
                       </p>
 
                 </div>
+            </div>
             </div>
         )
     }
