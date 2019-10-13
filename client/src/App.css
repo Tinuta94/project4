@@ -226,11 +226,7 @@ height: 410px
   width: 600px;
   margin-left: 20px;
 }
-.clasa {
-  height: 670px;
-  width: 100px;
- 
-}
+
 .foto {
   width: 500px;
   height: 100px
@@ -281,6 +277,11 @@ h4 {
  margin-right: 15px;
  border: 3px solid black;
  margin-top: 10px
+ 
+}
+.clasa {
+  height: 670px;
+  width: 1380px;
  
 }
 
