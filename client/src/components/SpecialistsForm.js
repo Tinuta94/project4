@@ -63,8 +63,8 @@ class SpecialistsForm extends Component {
                     <TextField
                         id="outlined-uncontrolled"
                         label="Description"
-                        name="descrp."
-                        type="description"
+                        name="description"
+                        type="text"
                         onChange={this.handleChange}
                         value={this.state.newSpecialist.description}
                         margin="normal"
