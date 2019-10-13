@@ -24,9 +24,11 @@ add/delete services,specialists,options.This will help clients to see all the up
 - CSS
 
 # ERD
+
 ![alt text](https://github.com/Tinuta94/project4/blob/master/Screen%20Shot%202019-10-13%20at%202.09.05%20PM.png)
 # Wireframes
-![alt text](ttps://github.com/Tinuta94/project4/blob/master/first.png)
+
+![alt text](https://github.com/Tinuta94/project4/blob/master/first.png)
 ![alt text](https://github.com/Tinuta94/project4/blob/master/second.png)
 ![alt text](https://github.com/Tinuta94/project4/blob/master/third.png)
 ![alt text](https://github.com/Tinuta94/project4/blob/master/fourth.png)
