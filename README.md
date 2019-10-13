@@ -20,7 +20,7 @@ add/delete services,specialists,options.This will help clients to see all the up
 - Python
 - Django
 - SQL
- -Material UI
+- Material UI
 - CSS
 
 # ERD
