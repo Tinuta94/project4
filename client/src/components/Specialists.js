@@ -13,67 +13,58 @@ import Button from '@material-ui/core/Button';
 
 const Specialists = (specialistsList, handleDeleteSpecialist, service) => (
 
-    <div>
-  
-      
-        <div class="specialistss">
-        <Link to={`/services/${service.id}/specialists/new`}>
-                <Button id="addspec">Add a Specialist</Button></Link>
-        <div class="listspecial">
-            {specialistsList.map(specialist => (
-                <div>
-                   <div>
-            <List>
-            <ListItem alignItems="flex-start">
-              <ListItemAvatar>
-                <Avatar alt="Remy Sharp" src={specialist.photo_url} />
-              </ListItemAvatar>
-              <ListItemText
-                primary={specialist.name}
-                secondary={
-                  <React.Fragment>
-                    <Typography
-                      component="span"
-                      variant="body2"
-                    //   className={classes.inline}
-                      color="textPrimary"
-                    >
-                     
-                    </Typography>
-                    {specialist.description}<br></br>
-                    <br></br>
-                    {specialist.email}
+  <div>
 
-                  </React.Fragment>
-                }
-              />
-          
-            <Divider variant="inset" component="li" />
-           
-            </ListItem>
-          </List>
+
+    <div class="specialistss">
+      <Link to={`/services/${service.id}/specialists/new`}>
+        <Button id="addspec">Add a Specialist</Button></Link>
+      <div class="listspecial">
+        {specialistsList.map(specialist => (
+          <div>
+            <div>
+              <List>
+                <ListItem alignItems="flex-start">
+                  <ListItemAvatar>
+                    <Avatar alt="Remy Sharp" src={specialist.photo_url} />
+                  </ListItemAvatar>
+                  <ListItemText
+                    primary={specialist.name}
+                    secondary={
+                      <React.Fragment>
+                        <Typography
+                          component="span"
+                          variant="body2"
+                          //   className={classes.inline}
+                          color="textPrimary"
+                        >
+
+                        </Typography>
+                        {specialist.description}<br></br>
+                        <br></br>
+                        {specialist.email}
+
+                      </React.Fragment>
+                    }
+                  />
+
+                  <Divider variant="inset" component="li" />
+
+                </ListItem>
+              </List>
+            </div>
+            <Button variant="contained" id="handelete" onClick={() => handleDeleteSpecialist(specialist.id)}>Delete</Button>
+
           </div>
-        
-                     {/* <div>{specialist.name}</div>
-                    <div><img src={specialist.photo_url} /></div>
-                    <div>{specialist.description}</div>
-                    <div>{specialist.email}</div> */}
+        )
+        )}
 
-                    
-                     <Button variant="contained" id="handelete" onClick={() => handleDeleteSpecialist(specialist.id)}>Delete</Button>  
-
-                    </div>
-
-                    
-            )
-            )}
-           
-        </div>
-       </div>
-
-      
-
+      </div>
     </div>
+
+
+
+  </div>
 );
 
 export default Specialists;

@@ -43,10 +43,7 @@ h1 {
   margin-top: auto;
 }
 p {
-  
-  /* font-family: 'Spirax', cursive; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* font-family: 'Italianno', cursive; */
   font-size: 23px;
   padding: 0 20px 0 0;
   color: black;
@@ -286,15 +283,7 @@ h4 {
  margin-top: 10px
  
 }
-/* .quote {
-  font-size: 23px;
-  color: purple;
-  margin-top: -85px;
-  padding-right: 300px;
-  float: left;
-  padding-bottom: 65px;
-  padding-right: 270px
-} */
+
 .pic {
   background-image: url("https://i.pinimg.com/originals/f3/e3/df/f3e3dfa3bf02617d4333f7cdb727998a.jpg");
   height: 400px;

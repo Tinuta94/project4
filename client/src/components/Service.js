@@ -17,7 +17,7 @@ class Service extends Component {
     }
 
 
-    getServiceFromServer = () => 
+    getServiceFromServer = () =>
         axios.get(`/api/services/${this.props.match.params.id}/`)
             .then((res) => {
                 this.setState({
@@ -25,27 +25,27 @@ class Service extends Component {
                 })
             })
 
-    getServiceSpecialistsFromServer = () => 
+    getServiceSpecialistsFromServer = () =>
         axios.get(`/api/specialists/`)
             .then((res) => {
                 const specialists = res.data.filter(specialist => specialist.service === this.state.service.id)
                 this.setState({ specialists })
             })
-    
-    getServiceOptionsFromServer = () => 
-            axios.get(`/api/options/`)
-                .then((res) => {
-                    const options = res.data.filter(option => option.service === this.state.service.id)
-                    this.setState({ options })
-                })
-        
+
+    getServiceOptionsFromServer = () =>
+        axios.get(`/api/options/`)
+            .then((res) => {
+                const options = res.data.filter(option => option.service === this.state.service.id)
+                this.setState({ options })
+            })
+
 
     componentDidMount() {
         this.getServiceFromServer()
             // .then(() => this.getServiceSpecialistsFromServer())
             .then(this.getServiceSpecialistsFromServer)
             .then(this.getServiceOptionsFromServer)
-        
+
     }
 
 
@@ -62,7 +62,7 @@ class Service extends Component {
         axios.delete(`/api/specialists/${specialistId}/`)
             .then(() => this.getServiceSpecialistsFromServer())
     }
-   
+
 
     handleDeleteOption = (optionId) => {
         axios.delete(`/api/options/${optionId}/`)
@@ -70,11 +70,11 @@ class Service extends Component {
     }
 
     handleToggleSpecialists = () => {
-        this.setState({isSpecialistsShown: true, isOptionsShown: false})
+        this.setState({ isSpecialistsShown: true, isOptionsShown: false })
     }
 
     handleToggleOptions = () => {
-        this.setState({isOptionsShown: true, isSpecialistsShown: false})
+        this.setState({ isOptionsShown: true, isSpecialistsShown: false })
     }
 
 
@@ -83,41 +83,36 @@ class Service extends Component {
             return <Redirect to="/services" />
         }
         return (
-            
+
             <div class="backserv">
-              
-               <div class="firstimgserv"></div>
+
+                <div class="firstimgserv"></div>
                 <p class="servnametwo">{this.state.service.name}</p>
                 <hr></hr>
-                 <div class="buttons">
-                     <div class="click">
-                <Button  onClick={this.handleDeleteService}>Delete Service</Button>
+                <div class="buttons">
+                    <div class="click">
+                        <Button onClick={this.handleDeleteService}>Delete Service</Button>
+                    </div>
+                    <div class="click">
+                        <Button onClick={this.handleToggleSpecialists}>Specialists</Button>
+                    </div>
+                    <div class="click">
+                        <Button onClick={this.handleToggleOptions}>Options</Button>
+                    </div>
                 </div>
-                <div class="click">
-                <Button  onClick={this.handleToggleSpecialists}>Specialists</Button>
-                </div>
-                <div class="click">
-                <Button  onClick={this.handleToggleOptions}>Options</Button>
-                </div>
-                </div>
-               
+
                 <div class="empty"></div>
-                {/* <Link to={`/services/${this.state.service.id}/specialists/new`}>
-                    <button >Add a Specialist</button></Link> */}
 
-                    {/* <Link to={`/services/${this.state.service.id}/options/new`}>
-                    <button >Add New Option</button></Link> */}
-
-                {   this.state.isSpecialistsShown 
+                {this.state.isSpecialistsShown
                     ? Specialists(this.state.specialists, this.handleDeleteSpecialist, this.state.service)
                     : null
                 }
 
-                {   this.state.isOptionsShown 
+                {this.state.isOptionsShown
                     ? Options(this.state.options, this.handleDeleteOption, this.state.service)
                     : null
                 }
-                
+
             </div>
 
         )

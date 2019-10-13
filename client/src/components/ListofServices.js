@@ -36,7 +36,6 @@ class ListofServices extends Component {
                     <div class="addbutton">
                         <Link class="btnlink" to={`/services/addnew/`} >
                             <i class="fa fa-plus-circle" id="circle" ></i>
-                            {/* <Button variant="contained" color="secondary">Add</Button> */}
                         </Link>
                     </div>
                 </div>
@@ -50,16 +49,9 @@ class ListofServices extends Component {
                                 <div class="servname"><h5>{service.name}</h5></div>
                                 <div class="servimg"><img src={service.photo_url} /></div>
                             </Link>
-
-
-
                         ))}
-
-
                     </ul>
-
                 </div>
-
             </div>
         )
     }
