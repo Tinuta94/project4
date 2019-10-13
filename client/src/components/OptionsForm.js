@@ -63,7 +63,7 @@ import Button from '@material-ui/core/Button';
                         id="outlined-uncontrolled"
                         label="Description"
                         name="descrp."
-                        type="description"
+                        type="text"
                         onChange={this.handleChange}
                         value={this.state.newOption.description}
                         margin="normal"
@@ -75,8 +75,8 @@ import Button from '@material-ui/core/Button';
                     <TextField
         // id="outlined-email-input"
         label="Price"
-        type="email"
-        name="email"
+        type="price"
+        name="price"
         onChange={this.handleChange}
         value={this.state.newOption.price} 
         margin="normal"
