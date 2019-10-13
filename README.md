@@ -1,7 +1,7 @@
 # project4
 # Beauty Salon "Un Petit Coin De Paradis"
-#[Deployed App](https://shrouded-crag-12735.herokuapp.com)
-#[Trello]()
+# [Deployed App](https://shrouded-crag-12735.herokuapp.com)
+# [Trello]()
 
 This is an application  that contains all the information about a beauty salon at a certain location: 
 Information about,Other Locations,Gallery of salons's specialists work,Services and Contact Information.Service section includes
@@ -20,5 +20,13 @@ add/delete services,specialists,options.This will help clients to see all the up
 -CSS
 
 
-#Prework
+# Prework
+# ERD
+![alt text](https://github.com/Tinuta94/project4/blob/master/Screen%20Shot%202019-10-13%20at%202.09.05%20PM.png)
+# Wireframes
 ![alt text]()
+![alt text]()
+![alt text]()
+![alt text]()
+
+
