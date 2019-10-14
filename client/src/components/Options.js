@@ -25,9 +25,9 @@ const Options = (optionsList, handleDeleteOption, service) => (
                             <CardActionArea>
                                 <CardMedia
                                     component="img"
-                                    alt={option.name}
+                                    // alt={option.name}
 
-                                    title={option.name}
+                                    // title={option.name}
                                     className="artist-photo"
                                     image={option.photo_url}
                                 />

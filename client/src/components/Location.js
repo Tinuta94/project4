@@ -36,15 +36,19 @@ export default class Location extends Component {
                     </Carousel>
 
                     <div className="texts">
-                        <p id="text"> I am sure over the last few months many of you will have visited one of the many trade shows that happened across
-                 the UK and Ireland.During your visit you will have seen new  pieces of equipment, treatments, techniques and ideas<br></br>
-                            of things to add to your business  but what is the best way to introduce a new treatment or technique to your<br></br>
-                            business for maximum result but minimum outlay?As an ever evolving industry with a society of people who are more <br></br>
+                        <p id="text"> Located in Atlanta’s Historic Old Fourth Ward, Un Petit Coin De Paradis is a collective of beauty and wellness professionals 
+                        founded on the belief that beauty is not, in fact, skin deep; that the way we look and feel is deeply and directly
+                         influenced by the lives we lead.<br></br>
+
+                        Our convictions are reflected in the services we provide. Whether it’s a facial, an eyebrow wax or haircut,
+                         our collective strives to create a peaceful environment where the finest sustainable and natural products
+                          are used in the most personalized treatments for your needs. We believe in our connection with global
+                           and local farms and recognize that they help us plant the seeds for your renewal by growing the bounty
+                            used in all of our products.
                             <br></br>
-                            and more aware of beauty treatments and products, and conscious of their appearance it has become a necessity for <br></br>
-                            salons and therapists to introduce new treatments, oducts and techniques on a regular basis to keep ahead of the
-                            game and stand out from their  competitors.Introducing new treatments can be expensive in equipment, products and
-                training but then you have the added expense of marketing the treatment, all of which add up.<br></br>
+                            Our success rests on our connection with you. At Un Petit Coin De Paradis, you’re not a customer in search of
+                         à la carte services. You are a friend who deserves our undivided attention and care.
+                           <br></br>
                             <br></br>
                         </p>
 

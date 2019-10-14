@@ -14,8 +14,6 @@ import Button from '@material-ui/core/Button';
 const Specialists = (specialistsList, handleDeleteSpecialist, service) => (
 
   <div>
-
-
     <div class="specialistss">
       <Link to={`/services/${service.id}/specialists/new`}>
         <Button id="addspec">Add a Specialist</Button></Link>
